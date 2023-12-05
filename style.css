@@ -1,13 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html,body{
+
+html,
+body {
     height: 100%;
     width: 100%;
 }
-.pg1{
+
+.pg1 {
     height: 100vh;
     width: 100%;
     background-color: rgb(239, 239, 239);
@@ -15,9 +18,10 @@ html,body{
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
-   
+
 }
-nav{
+
+nav {
     height: 10vh;
     width: 100%;
     /* background-color: white; */
@@ -26,35 +30,40 @@ nav{
     justify-content: space-between;
     padding: 0 3vmax;
 }
-nav >h1{
+
+nav>h1 {
     font-size: 2vmax;
     font-family: Arial, Helvetica, sans-serif;
 }
-ul{
+
+ul {
     display: flex;
 }
-ul li{
+
+ul li {
     list-style: none;
-    font-family: Arial, Hel
-    vetica, sans-serif;
+    font-family: Arial, Hel vetica, sans-serif;
     font-size: 1.5vmax;
     margin: 0 1vmax;
 }
-.icons{
+
+.icons {
     height: 8vh;
     width: 10vw;
     /* border: 2px solid black; */
-display: flex;
-align-items: center;
-justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 
 }
-.icons> h6{
+
+.icons>h6 {
     font-size: 1.7vmax;
 }
-.pg1div{
-   height: 90%;
-   width: 100%;
+
+.pg1div {
+    height: 90%;
+    width: 100%;
     /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
@@ -63,7 +72,7 @@ justify-content: space-evenly;
     padding: 0 5vmax;
 }
 
-.content{
+.content {
     height: 38vh;
     width: 40vw;
     /* border: 2px solid black; */
@@ -71,16 +80,19 @@ justify-content: space-evenly;
     padding: 1vmax 1vmax;
 
 }
-.content >h1{
+
+.content>h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.9vmax;
 }
-.content >p{
+
+.content>p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2vmax;
     margin-top: 1vmax;
 }
-.content >button{
+
+.content>button {
     padding: 0.7vmax 1vmax;
     background-color: black;
     color: white;
@@ -93,17 +105,102 @@ justify-content: space-evenly;
     transition: all ease 1s;
 
 }
-.content >button:hover{
+
+.content>button:hover {
     background-color: transparent;
     color: black;
     transform: translateY(0.6vmax);
     border: 2px solid black;
     font-weight: bold;
 }
+
 /* -----------------------------------pg1------------------------------------ */
 
+@media(max-width: 600px) {
+    nav {
+        width: 100vw;
+    }
 
-.pg2{
+    nav ul {
+        display: none;
+        width: 100%;
+    }
+
+    nav>h1 {
+        font-size: 3vmax;
+    }
+
+    .icons {
+        height: 5vh;
+        width: 25vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* border: 2px solid black; */
+        margin-left: 24vmax;
+    }
+
+    .icons>h6 {
+        font-size: 2.6vmax;
+    }
+
+    .pg1 {
+        height: 100vh;
+        width: 116%;
+        background-color: rgb(239, 239, 239);
+        background-image: url("https://media.istockphoto.com/id/1195791038/photo/weave-wooden-chair-in-white-room-for-mockup-3d-rendering.jpg?s=612x612&w=0&k=20&c=G5ckL1mG03r7I4e01viG1vNU3Vonh-EkaxYYrfK_DxM=");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .pg1:hover {
+        height: 100vh;
+        width: 116%;
+        background-color: rgb(239, 239, 239);
+        background-image: url("https://media.istockphoto.com/id/1098076380/photo/minimalistic-home-interior-with-grey-design-sofa-geometric-basket-plant-and-stylish-blanket.jpg?s=612x612&w=0&k=20&c=BNJGVFSI7xjdvYydklFetXSlStMYqEm-e8Vio9aASL4=");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .pg1div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 0 5vmax;
+    }
+
+    .content {
+        height: 30vh;
+        width: 70vw;
+        text-align: center;
+        padding: 1vmax 0vmax;
+        margin-top: 7vmax;
+    }
+
+    .content>h1 {
+        font-size: 3.3vmax;
+    }
+
+    .content>p {
+        font-size: 1.6vmax;
+    }
+
+    .content>button {
+        padding: 1.5vmax 1.2vmax;
+        font-size: 1.6vmax;
+        margin-top: 2vmax;
+
+    }
+
+}
+
+/* ------------------pg1 media query end------------------------------------------ */
+
+
+.pg2 {
     height: 45vh;
     width: 100%;
     display: flex;
@@ -111,49 +208,85 @@ justify-content: space-evenly;
     align-items: center;
     justify-content: center;
     padding: 0 2vmax;
-    background-color: rgb(214,228,229);
+    background-color: rgb(214, 228, 229);
 }
-.pg2 >h2{
+
+.pg2>h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2vmax;
     margin-top: 2vmax;
 }
-.pg2 >p{
- font-family: Arial, Helvetica, sans-serif;
+
+.pg2>p {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2vmax;
     text-align: center;
-width: 50vw;
-margin-top: 1vmax;
+    width: 50vw;
+    margin-top: 1vmax;
 }
-img{
+
+img {
     height: 15vh;
     width: 15vw;
-margin-top: 1vmax;
+    margin-top: 1vmax;
 
 }
 
 /* ------------------------------pg2 end------------------------------------- */
 
+@media(max-width: 600px) {
 
-.pg3{
+    .pg2 {
+        height: 45vh;
+        width: 116%;
+
+    }
+
+    .pg2>h2 {
+        font-size: 2.8vmax;
+        margin-top: 1vmax;
+        text-align: center;
+    }
+
+    .pg2>p {
+        font-size: 2vmax;
+        /* text-align: center; */
+        width: 90vw;
+        margin-top: 1vmax;
+    }
+
+    img {
+        height: 18vh;
+        width: 25vw;
+        margin-top: 1vmax;
+
+    }
+
+}
+
+/* ---------------------pg2 media query end----------------------------------------- */
+
+.pg3 {
     height: 100vh;
     width: 100%;
     display: flex;
     background-color: rgb(239, 239, 239);
 
 }
-.pg3-left{
+
+.pg3-left {
     height: 100vh;
     width: 50%;
     /* background-color: yellow; */
 }
 
-.pg3-right{
+.pg3-right {
     height: 100vh;
     width: 50%;
     /* background-color: cyan; */
 }
-.leftpart1{
+
+.leftpart1 {
     height: 67vh;
     width: 100%;
     /* border: 2px solid black; */
@@ -163,13 +296,14 @@ margin-top: 1vmax;
     background-repeat: no-repeat;
 }
 
-.leftpart2{
-    height:33vh;
+.leftpart2 {
+    height: 33vh;
     width: 100%;
     /* border: 2px solid black; */
     display: flex;
 }
-.leftpart2 >.imgbox{
+
+.leftpart2>.imgbox {
     height: 100%;
     width: 50%;
     /* border: 2px solid black; */
@@ -180,7 +314,8 @@ margin-top: 1vmax;
 
 
 }
-.leftpart2 >.contentbox{
+
+.leftpart2>.contentbox {
     height: 100%;
     width: 50%;
     /* border: 2px solid black; */
@@ -190,92 +325,35 @@ margin-top: 1vmax;
     justify-content: center;
 
 }
-.leftpart2 >.contentbox >h1{
-font-family: Arial, Helvetica, sans-serif;
-font-size: 2vmax;
-margin-bottom: 1vmax;
+
+.leftpart2>.contentbox>h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vmax;
+    margin-bottom: 1vmax;
 }
 
-.leftpart2 >.contentbox >p{
+.leftpart2>.contentbox>p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2vmax;
     text-align: center;
-    
-    }
-
-    .leftpart2 >.contentbox >button{
-        padding: 0.7vmax 1vmax;
-        background-color: black;
-        color: white;
-        border: none;
-        border-radius: 0.5vmax;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.3vmax;
-        margin-top: 1vmax;
-        cursor: pointer;
-        transition: all ease 1s;
-        
-        }
-
-        .leftpart2 >.contentbox >button:hover{
-            background-color: transparent;
-            color: black;
-            transform: translateY(0.6vmax);
-            border: 2px solid black;
-            font-weight: bold;
-        }
-
-
-    
-.rightpart1{
-    height: 67vh;
-    width: 100%;
-    /* border: 2px solid black; */
 
 }
 
-.rightpart1-top{
-    height: 34vh;
-    width: 100%;
-    /* background-color: red; */
-    display: flex;
-}
-.rightpart1-top > .contentbox{
-height: 100%;
-width: 50%;
-/* border: 2px solid black; */
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-}
-
-.rightpart1-top > .contentbox >h1{
-    font-family: Arial, Helvetica, sans-serif;
-font-size: 2vmax;
-margin-bottom: 1vmax;
-}
-
-.rightpart1-top > .contentbox >p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2vmax;
-    text-align: center;
-}
-
-.rightpart1-top > .contentbox >button{
+.leftpart2>.contentbox>button {
     padding: 0.7vmax 1vmax;
-        background-color: black;
-        color: white;
-        border: none;
-        border-radius: 0.5vmax;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.3vmax;
-        margin-top: 1vmax;
-        cursor: pointer;
-        transition: all ease 1s;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0.5vmax;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vmax;
+    margin-top: 1vmax;
+    cursor: pointer;
+    transition: all ease 1s;
+
 }
 
-.rightpart1-top > .contentbox >button:hover{
+.leftpart2>.contentbox>button:hover {
     background-color: transparent;
     color: black;
     transform: translateY(0.6vmax);
@@ -285,101 +363,43 @@ margin-bottom: 1vmax;
 
 
 
-
-.rightpart1-top > .imgbox{
-    height: 100%;
-    width: 50%;
-    /* border: 2px solid black; */
-    background-image: url("https://images.unsplash.com/photo-1599031425762-838bd43d4f66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    }
-
-.rightpart1-bottom{
-    height: 33vh;
+.rightpart1 {
+    height: 67vh;
     width: 100%;
-    /* background-color: blue; */
+    /* border: 2px solid black; */
+
+}
+
+.rightpart1-top {
+    height: 34vh;
+    width: 100%;
+    /* background-color: red; */
     display: flex;
 }
 
-.rightpart1-bottom > .imgbox{
+.rightpart1-top>.contentbox {
     height: 100%;
     width: 50%;
     /* border: 2px solid black; */
-    background-image: url("https://media.istockphoto.com/id/1314002738/photo/farmhouse-living-room-interior-with-wooden-furniture-wall-mockup.jpg?s=612x612&w=0&k=20&c=YcqnhZM3R3W1tY-fS1UJnNePGYI4PsAMTQbCXK5Pfyw=");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    }
-
-
-    .rightpart1-bottom > .contentbox{
-        height: 100%;
-        width: 50%;
-        /* border: 2px solid black; */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        }
-
-
-        .rightpart1-bottom > .contentbox >h1{
-            font-family: Arial, Helvetica, sans-serif;
-        font-size: 2vmax;
-        margin-bottom: 1vmax;
-        }
-        
-        .rightpart1-bottom > .contentbox >p{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 1.2vmax;
-            text-align: center;
-        }
-        
-        .rightpart1-bottom > .contentbox >button{
-            padding: 0.7vmax 1vmax;
-                background-color: black;
-                color: white;
-                border: none;
-                border-radius: 0.5vmax;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 1.3vmax;
-                margin-top: 1vmax;
-                cursor: pointer;
-                transition: all ease 1s;
-        }
-        
-        .rightpart1-bottom > .contentbox >button:hover{
-            background-color: transparent;
-            color: black;
-            transform: translateY(0.6vmax);
-            border: 2px solid black;
-            font-weight: bold;
-        }
-        
-
-    
-
-.rightpart2{
-    height:33vh;
-    width: 100%;
-    /* border: 2px solid black; */
-    padding: 1vmax 2vmax;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
-.rightpart2> p{
+
+.rightpart1-top>.contentbox>h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vmax;
+    margin-bottom: 1vmax;
+}
+
+.rightpart1-top>.contentbox>p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2vmax;
     text-align: center;
 }
-.rightpart2 > button{
+
+.rightpart1-top>.contentbox>button {
     padding: 0.7vmax 1vmax;
     background-color: black;
     color: white;
@@ -392,7 +412,126 @@ margin-bottom: 1vmax;
     transition: all ease 1s;
 }
 
-.rightpart2 > button:hover{
+.rightpart1-top>.contentbox>button:hover {
+    background-color: transparent;
+    color: black;
+    transform: translateY(0.6vmax);
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+
+
+
+.rightpart1-top>.imgbox {
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid black; */
+    background-image: url("https://images.unsplash.com/photo-1599031425762-838bd43d4f66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.rightpart1-bottom {
+    height: 33vh;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+}
+
+.rightpart1-bottom>.imgbox {
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid black; */
+    background-image: url("https://media.istockphoto.com/id/1314002738/photo/farmhouse-living-room-interior-with-wooden-furniture-wall-mockup.jpg?s=612x612&w=0&k=20&c=YcqnhZM3R3W1tY-fS1UJnNePGYI4PsAMTQbCXK5Pfyw=");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.rightpart1-bottom>.contentbox {
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.rightpart1-bottom>.contentbox>h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vmax;
+    margin-bottom: 1vmax;
+}
+
+.rightpart1-bottom>.contentbox>p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vmax;
+    text-align: center;
+}
+
+.rightpart1-bottom>.contentbox>button {
+    padding: 0.7vmax 1vmax;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0.5vmax;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vmax;
+    margin-top: 1vmax;
+    cursor: pointer;
+    transition: all ease 1s;
+}
+
+.rightpart1-bottom>.contentbox>button:hover {
+    background-color: transparent;
+    color: black;
+    transform: translateY(0.6vmax);
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+
+
+
+.rightpart2 {
+    height: 33vh;
+    width: 100%;
+    /* border: 2px solid black; */
+    padding: 1vmax 2vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.rightpart2>p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vmax;
+    text-align: center;
+}
+
+.rightpart2>button {
+    padding: 0.7vmax 1vmax;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0.5vmax;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vmax;
+    margin-top: 1vmax;
+    cursor: pointer;
+    transition: all ease 1s;
+}
+
+.rightpart2>button:hover {
     background-color: transparent;
     color: black;
     transform: translateY(0.6vmax);
@@ -402,38 +541,118 @@ margin-bottom: 1vmax;
 
 /* ----------------------------------pg3 end---------------------------------------- */
 
-.pg4{
+@media(max-width: 600px) {
+    .pg3 {
+        width: 116%;
+        display: initial;
+
+    }
+
+    .pg3-left {
+        width: 117%;
+    }
+
+    .pg3-right {
+        width: 117%;
+    }
+
+    .leftpart2>.contentbox>h1 {
+        font-size: 2.7vmax;
+    }
+
+    .leftpart2>.contentbox>p {
+        font-size: 1.7vmax;
+        text-align: center;
+
+    }
+
+    .leftpart2>.contentbox>button {
+        padding: 1.1vmax 1.2vmax;
+        font-size: 1.6vmax;
+        margin-top: 2vmax;
+
+    }
+
+    .rightpart1-top>.contentbox>h1 {
+        font-size: 2.7vmax;
+    }
+
+    .rightpart1-top>.contentbox>p {
+        font-size: 1.7vmax;
+    }
+
+    .rightpart1-top>.contentbox>button {
+        padding: 1.1vmax 1.2vmax;
+        font-size: 1.6vmax;
+        margin-top: 2vmax;
+    }
+
+    .rightpart1-bottom>.contentbox>h1 {
+        font-size: 2.7vmax;
+    }
+    
+    .rightpart1-bottom>.contentbox>p {
+        font-size: 1.7vmax;
+    }
+    
+    .rightpart1-bottom>.contentbox>button {
+        padding: 1.1vmax 1.2vmax;
+        font-size: 1.6vmax;
+        margin-top: 2vmax;
+    }
+    
+    .rightpart2>p {
+        font-size: 1.7vmax;
+    }
+    
+    .rightpart2>button {
+        padding: 1.1vmax 1.2vmax;
+        font-size: 1.6vmax;
+        margin-top: 2vmax;
+    }
+
+}
+
+/* ----------------------pg3 media query end-------------------------------------- */
+
+
+
+
+.pg4 {
     height: 100vh;
     width: 100%;
     display: flex;
 
 }
-.pg4-left{
 
-height: 100%;
-width: 50%;
-background-color: black;
-clip-path: circle(54.7% at 25% 50%);
-display: flex;
-/* justify-content: center; */
-flex-direction: column;
-padding: 10vmax 1vmax;
-/* background-color: pink; */
+.pg4-left {
+
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    clip-path: circle(54.7% at 25% 50%);
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    padding: 10vmax 1vmax;
+    /* background-color: pink; */
 }
 
-.pg4-left >h1{
+.pg4-left>h1 {
     font-family: 'Crimson Text', serif;
     font-size: 4vmax;
     color: white;
 }
-.pg4-left >p{
+
+.pg4-left>p {
     font-family: 'Crimson Text', serif;
     font-size: 1.4vmax;
     color: white;
     width: 35vw;
     margin-top: 0.5vmax;
 }
-.pg4-left >button{
+
+.pg4-left>button {
     padding: 0.7vmax 1vmax;
     width: 20vw;
     border: none;
@@ -444,68 +663,74 @@ padding: 10vmax 1vmax;
     cursor: pointer;
     transition: all ease 1s;
 }
-.pg4-left >button:hover{
+
+.pg4-left>button:hover {
     color: black;
     transform: translateY(0.6vmax);
     border: 2px solid black;
     font-weight: bold;
 }
-.pg4-content{
+
+.pg4-content {
     height: 80vh;
     width: 100%;
     /* border: 2px solid white; */
     box-shadow: 0 0 10px grey;
-    overflow-y: auto; 
-    padding: 0 1vmax; 
+    overflow-y: auto;
+    padding: 0 1vmax;
 }
-.pg4-content::-webkit-scrollbar{
+
+.pg4-content::-webkit-scrollbar {
     width: 0.5vmax;
     border-radius: 1vmax;
 }
-.pg4-content::-webkit-scrollbar-thumb{
-    height:2vh;
+
+.pg4-content::-webkit-scrollbar-thumb {
+    height: 2vh;
     /* background-color:rgb(218, 216, 216); */
-    background-color: red;
+    background-color: grey;
     border-radius: 1vmax;
 
 }
-.pg4-content > .img1{
+
+.pg4-content>.img1 {
     height: 35vh;
     width: 27vw;
     /* border: 2px solid white; */
-  overflow: hidden;
-  margin-left:11vmax;
-  border-radius: 0.5vmax;
+    overflow: hidden;
+    margin-left: 11vmax;
+    border-radius: 0.5vmax;
 }
 
 
-.pg4-content> p{
-font-family: Arial, Helvetica, sans-serif;
-font-size: 1.3vmax;
-/* color: white; */
-text-align: center;
-padding: 1vmax 0;
+.pg4-content>p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vmax;
+    /* color: white; */
+    text-align: center;
+    padding: 1vmax 0;
 
 }
 
-.pg4-content >.img2{
+.pg4-content>.img2 {
     height: 35vh;
     width: 27vw;
     /* border: 2px solid white; */
-  margin-left:11vmax;
-  border-radius: 0.5vmax;
-    
+    margin-left: 11vmax;
+    border-radius: 0.5vmax;
+
 }
-.pg4-content >.img3{
+
+.pg4-content>.img3 {
     height: 35vh;
     width: 27vw;
     /* border: 2px solid white; */
-    margin-left:11vmax;
-  border-radius: 0.5vmax;
-    
+    margin-left: 11vmax;
+    border-radius: 0.5vmax;
+
 }
 
-.pg4-right{
+.pg4-right {
     height: 100%;
     width: 60%;
     /* background-color: rgb(239, 239, 239); */
@@ -513,41 +738,42 @@ padding: 1vmax 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-padding: 0vmax 2vmax;
-/* background-color: red; */
+    padding: 0vmax 2vmax;
+    /* background-color: red; */
 
-   }   
-   
-   .pg4-right >h1{
+}
+
+.pg4-right>h1 {
     font-family: 'Crimson Text', serif;
     font-size: 4vmax;
     text-align: center;
 }
 
-   /* -------------------------------pg4-end---------------------------------- */
+/* -------------------------------pg4-end---------------------------------- */
 
 
-   .pg5{
+.pg5 {
     height: 100vh;
     width: 100%;
     background-color: rgb(73, 113, 116);
-   }
-   
-   .pg5 >h1{
+}
+
+.pg5>h1 {
     font-family: 'Crimson Text', serif;
     font-size: 4vmax;
     text-align: center;
-   padding-top: 1vmax;
-   }
-   .pg5-box{
+    padding-top: 1vmax;
+}
+
+.pg5-box {
     height: 85vh;
     width: 100%;
     /* border: 2px solid black; */
     display: flex;
     justify-content: space-between;
-   }
+}
 
-   .pg5-box-left{
+.pg5-box-left {
     height: 100%;
     width: 23vw;
     /* border: 2px solid black; */
@@ -557,25 +783,28 @@ padding: 0vmax 2vmax;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   }
-   .pg5-box-left >h3{
+}
+
+.pg5-box-left>h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2vmax;
-   }
+}
 
-   .pg5-box-left >p{
+.pg5-box-left>p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3vmax;
     color: white;
     margin-top: 1vmax;
-   }
-   .pg5-box-right{
+}
+
+.pg5-box-right {
     height: 100%;
     width: 76vw;
     /* border: 2px solid black; */
-padding: 0 3vmax;
-   }
-.bedroomimg{
+    padding: 0 3vmax;
+}
+
+.bedroomimg {
     height: 35vh;
     width: 21vw;
     /* border: 2px solid black; */
@@ -584,18 +813,20 @@ padding: 0 3vmax;
     background-image: url("https://images.unsplash.com/photo-1598928636135-d146006ff4be?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D");
     background-position: center;
     background-size: cover;
-   border-radius: 0.5vmax;
+    border-radius: 0.5vmax;
 
 }
-.bedroomimg >h1{
+
+.bedroomimg>h1 {
     position: absolute;
-   padding-top: 12vmax;
-   padding-left: 3.7vmax;
-   /* color: white; */
-   font-size: 1.7vmax;
-   font-family: Arial, Helvetica, sans-serif;
+    padding-top: 12vmax;
+    padding-left: 3.7vmax;
+    /* color: white; */
+    font-size: 1.7vmax;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.kitchenimg{
+
+.kitchenimg {
     height: 35vh;
     width: 21vw;
     /* border: 2px solid black; */
@@ -605,19 +836,21 @@ padding: 0 3vmax;
     background-position: center;
     background-size: cover;
     border-radius: 0.5vmax;
-   /* position: absolute; */
- 
+    /* position: absolute; */
+
 }
-.kitchenimg >h1{
+
+.kitchenimg>h1 {
     position: absolute;
     font-size: 1.7vmax;
-  
-   padding-top: 1vmax;
-   padding-left: 4.5vmax;
-   /* color: white; */
-   font-family: Arial, Helvetica, sans-serif;
+
+    padding-top: 1vmax;
+    padding-left: 4.5vmax;
+    /* color: white; */
+    font-family: Arial, Helvetica, sans-serif;
 }
-.drawingroomimg{
+
+.drawingroomimg {
     height: 35vh;
     width: 21vw;
     /* border: 2px solid black; */
@@ -627,18 +860,20 @@ padding: 0 3vmax;
     background-position: center;
     background-size: cover;
     border-radius: 0.5vmax;
-   
+
 }
-.drawingroomimg >h1{
+
+.drawingroomimg>h1 {
     position: absolute;
     font-size: 1.7vmax;
-  
-   padding-top: 12vmax;
-   padding-left: 2vmax;
-   /* color: white; */
-   font-family: Arial, Helvetica, sans-serif;
+
+    padding-top: 12vmax;
+    padding-left: 2vmax;
+    /* color: white; */
+    font-family: Arial, Helvetica, sans-serif;
 }
-.washroomimg{
+
+.washroomimg {
     height: 35vh;
     width: 21vw;
     /* border: 2px solid black; */
@@ -648,19 +883,21 @@ padding: 0 3vmax;
     /* background-image: url("https://media.istockphoto.com/id/1346631479/photo/empty-bathroom.webp?b=1&s=170667a&w=0&k=20&c=b7jH9oV-E5p8grl_fJwQtV2NkvhgpCd0tvrJcb0tI_4="); */
     background-position: center;
     background-size: cover;
-   border-radius: 0.5vmax;
+    border-radius: 0.5vmax;
 
 }
-.washroomimg >h1{
+
+.washroomimg>h1 {
     position: absolute;
     font-size: 1.7vmax;
-  
-   padding-top: 1vmax;
-   padding-left: 3vmax;
-   /* color: white; */
-   font-family: Arial, Helvetica, sans-serif;
+
+    padding-top: 1vmax;
+    padding-left: 3vmax;
+    /* color: white; */
+    font-family: Arial, Helvetica, sans-serif;
 }
-.godroomimg{
+
+.godroomimg {
     height: 35vh;
     width: 21vw;
     /* border: 2px solid black; */
@@ -669,20 +906,21 @@ padding: 0 3vmax;
     background-image: url("https://www.99acres.com/microsite/wp-content/blogs.dir/6161/files/2023/05/Small-Pooja-room-designs-in-apartments.jpg");
     background-position: center;
     background-size: cover;
-   border-radius: 0.5vmax;
+    border-radius: 0.5vmax;
 
 }
-.godroomimg >h1{
+
+.godroomimg>h1 {
     position: absolute;
     font-size: 1.7vmax;
-  
-   padding-top: 12vmax;
-   padding-left: 3.6vmax;
-   /* color: white; */
-   font-family: Arial, Helvetica, sans-serif;
+
+    padding-top: 12vmax;
+    padding-left: 3.6vmax;
+    /* color: white; */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.lawnarea{
+.lawnarea {
     height: 35vh;
     width: 21vw;
     /* border: 2px solid black; */
@@ -691,59 +929,67 @@ padding: 0 3vmax;
     background-image: url("https://media.istockphoto.com/id/1167550447/photo/lounge-chairs-and-fire-pit-in-rear-yard-patio.jpg?s=612x612&w=0&k=20&c=jxwtTAC6MzCIrZpaqLvDBBw2-bT-0YNywS5Nb30Hiyo=");
     background-position: center;
     background-size: cover;
-   border-radius: 0.5vmax;
-  
+    border-radius: 0.5vmax;
+
 }
-.lawnarea >h1{
+
+.lawnarea>h1 {
     position: absolute;
     font-size: 1.7vmax;
-  
-   padding-top: 1vmax;
-   padding-left: 4.5vmax;
-   /* color: white; */
-   font-family: Arial, Helvetica, sans-serif;
+
+    padding-top: 1vmax;
+    padding-left: 4.5vmax;
+    /* color: white; */
+    font-family: Arial, Helvetica, sans-serif;
 }
-@keyframes move{
-    0%{
-    }
-    
-    100%{
+
+@keyframes move {
+    0% {}
+
+    100% {
         background-position: left;
 
     }
-    
-    100%{
+
+    100% {
         /* background-position:left; */
 
     }
 }
 
-.bedroomimg:hover, .kitchenimg:hover, .drawingroomimg:hover,.washroomimg:hover,.godroomimg:hover, .lawnarea:hover {
+.bedroomimg:hover,
+.kitchenimg:hover,
+.drawingroomimg:hover,
+.washroomimg:hover,
+.godroomimg:hover,
+.lawnarea:hover {
     animation: move 2s linear infinite forwards;
     transition: all ease 2s;
-    background-position:right;  
-   cursor: pointer;
+    background-position: right;
+    cursor: pointer;
 }
 
 /* ---------------------------------pg5 end-------------------------------- */
 
 
-.pg6{
+.pg6 {
     height: 100vh;
     width: 100%;
     background-color: rgb(239, 239, 239);
-display: flex;
-align-items: center;
-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.formbox{
+
+.formbox {
     height: 85vh;
     width: 60%;
     /* border: 2px solid black; */
     box-shadow: 0 0 4px grey;
     display: flex;
 }
-.formbox-left{
+
+.formbox-left {
     height: 100%;
     width: 50%;
     background-image: url("https://media.istockphoto.com/id/1147086011/photo/modern-concept-interior-design-of-black-and-grey-living-room-3d-render.jpg?s=612x612&w=0&k=20&c=LASDUY457-qD4WHT1zTaHUxgkQgDeiILz1rAaTRdIvA=");
@@ -752,10 +998,11 @@ justify-content: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
-  
-  
+
+
 }
-.overlay{
+
+.overlay {
     height: 100%;
     width: 100%;
     backdrop-filter: blur(4px);
@@ -764,35 +1011,39 @@ justify-content: center;
     align-items: center;
     justify-content: space-evenly;
 }
-.address{
+
+.address {
     height: 11vh;
     width: 15vw;
     /* border: 2px solid white; */
     margin-left: -3vmax;
 }
-.address >h4{
+
+.address>h4 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.4vmax;
-  
+
 }
-.address >h5{
+
+.address>h5 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1vmax;
     margin-top: 0.5vmax;
 }
 
-.call{
+.call {
     height: 10vh;
     width: 15vw;
     /* border: 2px solid white; */
     margin-left: -3vmax;
 }
 
-.call >h4{
+.call>h4 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.4vmax;
 }
-.call >h5{
+
+.call>h5 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2vmax;
     margin-top: 0.5vmax;
@@ -800,18 +1051,19 @@ justify-content: center;
 
 
 
-.email{
+.email {
     height: 10vh;
     width: 15vw;
     /* border: 2px solid white; */
     margin-left: -3vmax;
 }
 
-.email >h4{
+.email>h4 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.4vmax;
 }
-.email >h5{
+
+.email>h5 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2vmax;
     margin-top: 0.5vmax;
@@ -819,31 +1071,34 @@ justify-content: center;
 
 
 
-.formbox-right{
-height: 100%;
-width: 50%;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+.formbox-right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-form >h3{
+form>h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3vmax;
     color: rgb(146, 144, 144);
     margin-top: 0.6vmax;
 }
-input{
+
+input {
     padding: 0.7vmax 5vmax;
     border: 2px solid rgb(202, 202, 202);
     border-radius: 0.5vmax;
 }
-textarea{
+
+textarea {
     border: 2px solid rgb(202, 202, 202);
     border-radius: 0.5vmax;
 }
-.formbox-right button{
+
+.formbox-right button {
     padding: 0.5vmax 6vmax;
     margin-left: 4vmax;
     margin-top: 0.7vmax;
@@ -858,7 +1113,7 @@ textarea{
 
 /* ---------------------------pg6 end-------------------------------------- */
 
-footer{
+footer {
     height: 50vh;
     width: 100%;
     background-color: black;
@@ -868,54 +1123,59 @@ footer{
     align-items: center;
     justify-content: space-between;
     padding-top: 1vmax;
-  
+
 }
-footer >h1 u{
+
+footer>h1 u {
     font-size: 1.5vmax;
     font-family: Arial, Helvetica, sans-serif;
 
 
 }
-.connections{
+
+.connections {
     height: 10vh;
     width: 20vw;
-/* border: 2px solid white; */
-display: flex;
-align-items: center;
-justify-content: space-evenly;
-}
-.circle{
-    height: 7vh;
-    width: 4vw;
-/* border: 2px solid white; */
-border-radius: 5vmax;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 2.5vmax;
-color: white;
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-footer >p{
+.circle {
+    height: 7vh;
+    width: 4vw;
+    /* border: 2px solid white; */
+    border-radius: 5vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5vmax;
+    color: white;
+}
+
+footer>p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2vmax;
     text-align: center;
 }
-.copyright{
+
+.copyright {
     height: 10vh;
     width: 100%;
     color: rgb(191, 190, 190);
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 0 2vmax;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vmax;
 }
-.copyright >h1{
+
+.copyright>h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3vmax;
 }
 
-.copyright >h3{
+.copyright>h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3vmax;
 }

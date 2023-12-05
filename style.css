@@ -751,6 +751,79 @@ img {
 
 /* -------------------------------pg4-end---------------------------------- */
 
+@media(max-width: 600px){
+    .pg4 {
+        width: 116%;
+        display: initial;
+    
+    }
+    
+    .pg4-left {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0vmax 5vmax;
+        width: 116%;
+    }
+
+
+    .pg4-left>h1 {
+        font-size: 6vmax;
+        color: white;
+        margin-top: -15vmax;
+    }
+    
+    .pg4-left>p {
+        font-size: 2.5vmax;
+        color: white;
+        width: 85vw;
+    }
+    
+    .pg4-left>button {
+        padding: 1.5vmax 1vmax;
+        width: 28vw;
+        font-size: 2vmax;
+    }
+    .pg4-right {
+        width: 117%;
+    
+    }
+
+    .pg4-right>h1 {
+        font-size: 5vmax;
+    }
+    
+    
+    .pg4-content>.img1 {
+        height: 25vh;
+        width: 85vw;
+        margin-left: 4vmax;
+    }
+    
+    
+    .pg4-content>p {
+        font-size: 1.6vmax;
+    
+    }
+    
+    .pg4-content>.img2 {
+        height: 25vh;
+        width: 85vw;
+        margin-left: 4vmax;
+    
+    }
+    
+    .pg4-content>.img3 {
+        height: 25vh;
+        width: 85vw;
+        margin-left: 4vmax;
+    
+    }
+ 
+}
+
+
+/* ------------------------pg4 media query end---------------------------------------- */
 
 .pg5 {
     height: 100vh;

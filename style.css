@@ -18,6 +18,7 @@ body {
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
+    transition: all ease 1.5s;
 
 }
 
@@ -132,12 +133,12 @@ ul li {
 
     .icons {
         height: 5vh;
-        width: 25vw;
+        width: 15vw;
         display: flex;
         align-items: center;
         justify-content: space-between;
         /* border: 2px solid black; */
-        margin-left: 24vmax;
+        margin-left: 1vmax;
     }
 
     .icons>h6 {
@@ -146,7 +147,7 @@ ul li {
 
     .pg1 {
         height: 100vh;
-        width: 116%;
+        width: 100%;
         background-color: rgb(239, 239, 239);
         background-image: url("https://media.istockphoto.com/id/1195791038/photo/weave-wooden-chair-in-white-room-for-mockup-3d-rendering.jpg?s=612x612&w=0&k=20&c=G5ckL1mG03r7I4e01viG1vNU3Vonh-EkaxYYrfK_DxM=");
         background-position: center;
@@ -237,28 +238,27 @@ img {
 @media(max-width: 600px) {
 
     .pg2 {
-        height: 45vh;
-        width: 116%;
+        height: 35vh;
+        width: 100%;
 
     }
 
     .pg2>h2 {
         font-size: 2.8vmax;
-        margin-top: 1vmax;
+        margin-top: 1.5vmax;
         text-align: center;
     }
 
     .pg2>p {
-        font-size: 2vmax;
+        font-size: 1.8vmax;
         /* text-align: center; */
         width: 90vw;
-        margin-top: 1vmax;
+        margin-top: 1.4vmax;
     }
 
     img {
         height: 18vh;
         width: 25vw;
-        margin-top: 1vmax;
 
     }
 
@@ -543,17 +543,17 @@ img {
 
 @media(max-width: 600px) {
     .pg3 {
-        width: 116%;
+        width: 100%;
         display: initial;
 
     }
 
     .pg3-left {
-        width: 117%;
+        width: 100%;
     }
 
     .pg3-right {
-        width: 117%;
+        width: 100%;
     }
 
     .leftpart2>.contentbox>h1 {
@@ -753,7 +753,7 @@ img {
 
 @media(max-width: 600px){
     .pg4 {
-        width: 116%;
+        width: 100%;
         display: initial;
     
     }
@@ -763,7 +763,7 @@ img {
         justify-content: center;
         flex-direction: column;
         padding: 0vmax 5vmax;
-        width: 116%;
+        width: 100%;
     }
 
 
@@ -785,7 +785,7 @@ img {
         font-size: 2vmax;
     }
     .pg4-right {
-        width: 117%;
+        width: 100%;
     
     }
 
@@ -797,26 +797,28 @@ img {
     .pg4-content>.img1 {
         height: 25vh;
         width: 85vw;
-        margin-left: 4vmax;
+        margin-left: 0.4vmax;
     }
     
     
     .pg4-content>p {
         font-size: 1.6vmax;
-    
+    margin-left: 1vmax;
     }
     
     .pg4-content>.img2 {
         height: 25vh;
         width: 85vw;
-        margin-left: 4vmax;
+        margin-left: 0.4vmax;
+        
     
     }
     
     .pg4-content>.img3 {
         height: 25vh;
         width: 85vw;
-        margin-left: 4vmax;
+        margin-left: 0.4vmax;
+  
     
     }
  
@@ -1043,6 +1045,64 @@ img {
 }
 
 /* ---------------------------------pg5 end-------------------------------- */
+ 
+
+@media(max-width: 600px){
+
+    .pg5 {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .pg5>h1 {
+        font-size: 5vmax;
+    }
+    
+    .pg5-box {
+        height: 85vh;
+        width: 100%;
+        display: initial;
+    }
+
+    .pg5-box-left {
+        height: 32%;
+        width: 90vw;
+        /* border: 2px solid black; */
+        padding: 1vmax 1vmax;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .pg5-box-left>h3 {
+        font-size: 3vmax;
+    }
+    
+    .pg5-box-left>p {
+        font-size: 1.7vmax;
+    }
+    
+    .pg5-box-right {
+        height: 60%;
+        width: 100vw;
+        /* border: 2px solid black; */
+    padding: 0 1vmax;
+    }
+
+    .bedroomimg, .kitchenimg, .drawingroomimg, .washroomimg, .godroomimg, .lawnarea  {
+        height: 16vh;
+        width:43vw;        
+    }
+    
+    .bedroomimg>h1, .kitchenimg>h1, .drawingroomimg>h1, .washroomimg>h1, .godroomimg>h1, .lawnarea>h1 {
+        font-size: 2vmax;
+    }
+    
+}
+
+/* ------------------------pg5 media query end------------------------------------- */
 
 
 .pg6 {
@@ -1186,6 +1246,100 @@ textarea {
 
 /* ---------------------------pg6 end-------------------------------------- */
 
+@media(max-width: 600px){
+
+    .pg6 {
+        width: 100%;
+    }
+    
+    .formbox {
+        height: 65vh;
+        width: 98%;
+        /* border: 2px solid black; */
+        box-shadow: 0 0 4px grey;
+        display: flex;
+    }
+
+
+    .address {
+        height: 8vh;
+        width: 32vw;
+        /* border: 2px solid white; */
+    }
+    
+    .address>h4 {
+        font-size: 2vmax;
+    
+    }
+    
+    .address>h5 {
+        font-size: 1.3vmax;
+    }
+    
+    .call {
+        height: 5vh;
+        width: 30vw;
+        /* border: 2px solid white; */
+    }
+    
+    .call>h4 {
+        font-size: 2vmax;
+    }
+    
+    .call>h5 {
+        font-size: 1.3vmax;
+        margin-left: 1vmax;
+    }
+    
+    
+    
+    .email {
+        height: 7vh;
+        width: 40vw;
+        /* border: 2px solid white; */
+        margin-left: 3vmax;
+    }
+    
+    .email>h4 {
+        font-size: 2vmax;
+    }
+    
+    .email>h5 {
+        font-size: 1.3vmax;
+    }
+    
+    form>h3 {
+        font-size: 2vmax;
+        margin-left: 1vmax;
+
+    }
+    
+    input {
+        border: 2px solid rgb(202, 202, 202);
+        width: 42vw;
+        height: 4vh;
+        margin-left: 1vmax;
+    }
+    textarea {
+        width:42vw;
+        margin-left: 1vmax;
+
+    }
+    
+    .formbox-right button {
+        padding: 1vmax 6vmax;
+        margin-top: 1.5vmax;
+        font-size: 1.9vmax;
+        /* margin-left: 2.5vmax; */
+    
+    }
+
+
+}
+
+/* --------------------pg6 media query end-------------------------------------------- */
+
+
 footer {
     height: 50vh;
     width: 100%;
@@ -1251,4 +1405,39 @@ footer>p {
 .copyright>h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3vmax;
+}
+
+/* -----------------------------footer end----------------------------------- */
+
+
+@media(max-width: 600px){
+
+    footer {
+        width: 100%;
+    
+    }
+    
+    footer>h1 u {
+        font-size: 4vmax;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .connections {
+        height: 8vh;
+        width: 50vw;
+    }
+    
+    .circle {
+        height: 5vh;
+        width: 10vw;
+    }
+    .circle >i{
+        font-size: 4vmax;
+    }
+
+    footer>p {
+        font-size: 1.9vmax;
+    }
+    
+
 }

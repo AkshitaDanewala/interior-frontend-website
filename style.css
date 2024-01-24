@@ -31,6 +31,8 @@ body {
     background-repeat: no-repeat;
     cursor: pointer;
     background-color: #EBECEE;
+    transition: all ease 2s;
+
 
 }
 nav {
@@ -147,7 +149,7 @@ li:hover::before{
 
 @media(max-width: 600px) {
     nav {
-        width: 100vw;
+        width: 100%;
     }
 
     nav ul {
@@ -715,6 +717,7 @@ img {
 .pg4-content::-webkit-scrollbar {
     width: 0.5vmax;
     border-radius: 1vmax;
+    /* display: none; */
 }
 
 .pg4-content::-webkit-scrollbar-thumb {
@@ -1120,7 +1123,7 @@ img {
     
     .pg5-box-right {
         height: 60%;
-        width: 100vw;
+        width: 100%;
         /* border: 2px solid black; */
     padding: 0 1vmax;
     }
